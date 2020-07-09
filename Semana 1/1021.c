@@ -22,8 +22,7 @@ int main() {
     notasDe2 = notas/2;
     notas = notas%2;
 
-    moedasDe1r = notas/1;
-    notas = notas%1;
+    moedasDe1r = notas;
     moedasDe50c = moedas/50;
     moedas = moedas%50;
     moedasDe25c = moedas/25;
@@ -32,19 +31,17 @@ int main() {
     moedas = moedas%10;
     moedasDe5c = moedas/5;
     moedas = moedas%5;
-    moedasDe1c = moedas/1;
+    moedasDe1c = moedas;
 
     printf("NOTAS:\n");
-
     printf("%d nota(s) de R$ 100.00\n", notasDe100);
     printf("%d nota(s) de R$ 50.00\n", notasDe50);
     printf("%d nota(s) de R$ 20.00\n", notasDe20);
     printf("%d nota(s) de R$ 10.00\n", notasDe10);
     printf("%d nota(s) de R$ 5.00\n", notasDe5);
     printf("%d nota(s) de R$ 2.00\n", notasDe2);
-
+    
     printf("MOEDAS:\n");
-
     printf("%d moeda(s) de R$ 1.00\n", moedasDe1r);
     printf("%d moeda(s) de R$ 0.50\n", moedasDe50c);
     printf("%d moeda(s) de R$ 0.25\n", moedasDe25c);
