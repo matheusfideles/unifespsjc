@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main() {
     char operacao, *pontOperacao;
-    double mat[12][12], resp=0, *pontMat, *pontResp;
+    double resp=0, *pontMat, *pontResp;
     int i=0, j=0;
 
-    pontMat = &mat;
+    pontMat = malloc(12*12*sizeof(double));   //Cria a matriz dinamica double 12x12
     pontResp = &resp;
     pontOperacao = &operacao;
 
@@ -40,5 +40,6 @@ int main() {
         printf("%.1lf\n", *(pontResp));//Imprime a soma
     }
 
+    free(pontMat);
     return 0;
 }
