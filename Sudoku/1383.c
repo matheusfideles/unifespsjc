@@ -39,7 +39,7 @@ int main()
         {
             for(col=0; col<9; col++)
             {
-                switch (mat[lin][col])
+                switch (mat[lin][col])//Conta a aparição dos numeros de 1 a 9 na linha
                 {
                     case 1: 
                         cont[0]++;
@@ -72,7 +72,7 @@ int main()
                         resp=0;
                 }
             }
-            for(b=0; b<9;b++)
+            for(b=0; b<9;b++)//Checa se temos exatamente 1 de cada número de 1-9
             {
                 if(cont[b] != 1)
                 {
@@ -87,7 +87,7 @@ int main()
         {
             for(lin=0; lin<9; lin++)
             {
-                switch (mat[lin][col])
+                switch (mat[lin][col])//Conta a aparição dos numeros de 1 a 9 na coluna
                 {
                     case 1: 
                         cont[0]++;
@@ -120,7 +120,7 @@ int main()
                         resp=0;
                 }
             }
-            for(b=0; b<9;b++)
+            for(b=0; b<9;b++)//Checa pra ver se temos exatamente 1 de cada número na coluna.
             {
                 if(cont[b] != 1)
                 {
@@ -135,17 +135,17 @@ int main()
         {
             for(col=0; col<9; col++)
             {
-                aux = pow(mat[lin][col],2);
+                aux = pow(mat[lin][col],2);//Elevamos ao quadrado para podermos comparar a soma a 285
                 somaGrade[lin/3][col/3] += aux;
             }
         }
         
-        //Não deve ser diferente de 285.
+        //Não deve ser diferente de 285. 285 é a soma de 1^2 ~ 9^2
         for(lin=0; lin<3; lin++)
         {
             for(col=0; col<3; col++)
             {
-                if(somaGrade[lin][col] != soma)
+                if(somaGrade[lin][col] != soma)//A soma do quadrado dos valores dentro de uma grade 3x3 não pode ser diferente de 285
                 {
                     resp=0;
                 }
