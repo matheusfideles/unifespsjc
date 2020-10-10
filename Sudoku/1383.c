@@ -47,7 +47,6 @@ int main()
 int checaLinha(int mat[9][9])
 {
     int lin=0, col=0, resp=1, cont[9], i=0;
-
     //Inicializando os indices em cont, que irá contar a aparição dos numeros de 1-9 em cada um dos indices da linha/coluna
     //o indice [0] irá contabilizar a aparição do numero 1, o [1] a do numero 2 e assim por diante...
     for(i=0; i<9; i++)
@@ -168,7 +167,6 @@ int checaColuna(int mat[9][9])
 int checa3x3(int mat[9][9], int linhaInicio, int colunaInicio, int linhaFim, int colunaFim)
 {
     int i=0, j=0, cont[9], resp=1;
-
     //Inicia os indices no vetor cont, que irá contar a aparição dos numeros de 1 a 9 na submatriz 3x3
     //cont irá armazenar no indice [0] o número de aparições do numero 1, [1] irá armazenar a aparição do numero 2 e assim por diante...
     for(i=0; i<9; i++)
