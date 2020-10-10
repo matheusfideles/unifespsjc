@@ -97,6 +97,7 @@ int checaLinha(int mat[9][9])
             if(cont[i] != 1)//Se não tivermos exatamente 1 de cada número na linha, a matriz não sera uma solução
             {
                 resp=0;
+                break;
             }
             cont[i]=0;//Reinicia os indices em cont para realizar a proxima iteração do laço
         }
@@ -157,6 +158,7 @@ int checaColuna(int mat[9][9])
             if(cont[i] != 1)//Se não tivermos exatamente 1 de cada número na linha, a matriz não sera uma solução
             {
                 resp=0;
+                break;
             }
             cont[i]=0;//Reinicia os indices em cont para realizar a proxima iteração do laço
         }
@@ -220,6 +222,7 @@ int checa3x3(int mat[9][9], int linhaInicio, int colunaInicio, int linhaFim, int
         if(cont[i]!=1)//Se não tivermos exatamente 1 de cada número na matriz 3x3, a matriz 9x9 não será uma solução
         {
             resp=0;
+            break;
         }
     }
     return resp;
